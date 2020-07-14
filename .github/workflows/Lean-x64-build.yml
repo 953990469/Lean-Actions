@@ -16,7 +16,7 @@ on:
     types: started
 
 env:
-  REPO_URL: https://github.com/wangunchan/lede
+  REPO_URL: https://github.com/PassWall-OpenWrt/Lean
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Lean-x64.config
