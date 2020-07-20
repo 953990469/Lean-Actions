@@ -1,5 +1,5 @@
 
-name: Lean-x64-build
+name: Lean_x64_build
 
 on:
   repository_dispatch:
