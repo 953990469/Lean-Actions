@@ -107,6 +107,15 @@ jobs:
       if: (!cancelled())
       run: df -hT
 
+    - name: Cleaning
+      run: |
+        df -h
+        cd openwrt/bin/targets/x86/generic 
+        rm -f openwrt-x86-generic-generic-squashfs-rootfs.img
+        rm -f openwrt-x86-generic-generic-kernel.bin
+        rm -f openwrt-x86-generic-generic-squashfs-combined.vmdk
+        
+        
     - name: Upload bin directory
       uses: actions/upload-artifact@master
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
