@@ -111,9 +111,9 @@ jobs:
       run: |
         df -h
         cd openwrt/bin/targets/x86/generic 
-        rm -f openwrt-x86-generic-generic-squashfs-rootfs.img
-        rm -f openwrt-x86-generic-generic-kernel.bin
-        rm -f openwrt-x86-generic-generic-squashfs-combined.vmdk
+        rm -f openwrt-x86-generic-squashfs-rootfs.img
+        rm -f openwrt-x86-generic-kernel.bin
+        rm -f openwrt-x86-generic-squashfs-combined.vmdk
         
         
     - name: Upload bin directory
